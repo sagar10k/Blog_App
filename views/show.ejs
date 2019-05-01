@@ -1,0 +1,33 @@
+<% include partials/header %>
+
+<div class="container show">
+    <div class="item">
+            <div class="ui sizer vertical segment">
+             <div class="ui huge header" id="showHeader"><%= blog.name %></div>
+            </div>
+    </div>
+    <div class="ui items">
+        <div class="item">
+            <div class="image">
+                <img src="<%=blog.image%>">
+                <span><%=blog.date.toDateString() %></span>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+            <div class="content">
+                <div class="discription" id="showContent"> <%=blog.body%> </div>
+            </div>
+    </div>
+    <div class="ui items">
+        <div id="box" class="item">
+            <a class="ui inverted basic blue button mybutton" href="/blogs/<%=blog._id%>/edit">Edit</a>
+            <form id="delete" action="/blogs/<%=blog._id%>?_method=DELETE" method="POST">
+                    <button class="ui inverted basic blue button mybutton">Delete</button>
+            </form>
+             <a id="backbutton" class="ui inverted basic blue button mybutton" href="/blogs">Back</a>
+        </div>    
+    </div>
+</div>
+
+<% include partials/footer %>

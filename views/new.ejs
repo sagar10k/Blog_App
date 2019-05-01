@@ -1,0 +1,25 @@
+<% include partials/header %>
+
+<h1 class="newHeader">Create Post</h1>
+<form action="/blogs" class="ui form" method="post">
+    <div class="feild">
+        <label class="ui header">Name</label>
+        <input type="text" placeholder="Blog Name" name="blog[name]">
+    </div>
+    
+    <div class="feild">
+        <label class="ui header">Image</label>
+        <input type="text" placeholder="Image" name="blog[image]">
+    </div>
+    
+    <div class="feild">
+        <label class="ui header">Content</label>
+        <textarea placeholder="Content" name="blog[body]"></textarea>
+    </div>
+    <div id="newSubmit">
+     <button class="ui inverted big basic blue button mybutton">Sumbit</button>        
+    </div>
+
+</form>
+
+<% include partials/footer %>

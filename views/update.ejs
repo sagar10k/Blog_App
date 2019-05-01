@@ -1,0 +1,22 @@
+<% include partials/header %>
+
+<h1 class="newHeader">Update Post</h1>
+<form id="update" class="ui form" action="/blogs/<%= blog._id %>?_method=PUT" method="post">
+    <div class="feild">
+        <label class="ui header">Name</label>
+        <input type="text" placeholder="Blog Name" value="<%=blog.name%>" name="blog[name]">
+    </div>
+    
+    <div class="feild">
+        <label class="ui header">Image</label>
+        <input type="text" placeholder="Image" value="<%= blog.image %>" name="blog[image]">
+    </div>
+    
+    <div class="feild">
+        <label class="ui header">Content</label>
+        <textarea placeholder="content" name="blog[body]"> <%= blog.body %> </textarea>
+    </div>
+        <button class="ui inverted basic blue button mybutton">Update</button>
+</form>
+<a href="/blogs/<%=blog._id%>" class="ui inverted basic blue button mybutton">Back</a>
+<% include partials/footer %>

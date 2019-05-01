@@ -1,0 +1,68 @@
+i.icon{
+    font-size: 2em;
+}
+.divider{
+    border: solid 0.5px black; 
+    width: 150%;
+}
+div.items{
+    padding-left: 400px;
+    padding-right: 400px;
+    margin: 0 auto;
+}
+body{
+  background-color: #434343;
+}
+.show{
+    border:solid 2px black;
+}
+
+.name{
+    position: relative;
+    left: 0;
+}
+
+.button{
+    width: 20em;  
+    height: 3em;
+}
+
+.mybutton{
+    width: 10em;
+    height: 3em;
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+}
+
+#delete{
+    display: inline;
+}
+
+#update{
+    display: inline;
+}
+
+#box{
+    padding-bottom: 10px;
+}
+
+#newSubmit{
+    padding-top: 5px;
+}
+
+.newHeader{
+    font-size: 100px;
+}
+
+#showHeader{
+    font-size: 50px;
+}
+
+#showContent{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#updatebutton{
+    display: inline-block;
+}
